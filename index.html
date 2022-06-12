@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contato</title>
+</head>
+<style>
+    :root {
+        --denim-blue: #0741ADff;
+        --charcoal: #2F3A45ff;
+        --little-boy-blue: #62A1DAff;
+        --sapphire: #2659B8ff;
+        --charcoal-2: #454F5Bff;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--charcoal);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+
+    .form {
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .form img {
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .form input[type=text],
+    .form input[type=email] {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 10px;
+        display: block;
+        margin: 10px auto;
+        min-width: 100px;
+        max-width: 500px;
+        width: 100%;
+        height: 35px;
+        border: 5px solid var(--charcoal-2);
+        border-radius: 20px;
+    }
+
+    .form textarea {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 10px;
+        resize: vertical;
+        display: inline-block;
+        border-radius: 20px;
+        font-size: 16px;
+        border: 5px solid var(--charcoal-2);
+        max-width: 500px;
+        width: 100%;
+        height: 140px;
+    }
+
+    .form input[type=submit] {
+        padding-left: 10px;
+        display: block;
+        margin: 10px auto;
+        min-width: 100px;
+        max-width: 500px;
+        width: 100%;
+        height: 35px;
+        border: 5px solid var(--charcoal-2);
+        border-radius: 20px;
+        background-color: var(--denim-blue);
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+</style>
+
+<body>
+
+    <div class="form">
+        <img src="capa.jpeg">
+        <h1>Formulário De Contato!</h1>
+        <input type="text" name="nome" id="nome" placeholder="Seu Nome...">
+        <input type="email" name="email" id="email" placeholder="Seu Email...">
+        <textarea name="sua mensagem" id="mensagem" cols="30" rows="10"
+            placeholder="Deixe Aqui Á Sua Mensagem!"></textarea>
+        <input type="submit" value="Enviar">
+    </div>
+
+</body>
+
+</html>
